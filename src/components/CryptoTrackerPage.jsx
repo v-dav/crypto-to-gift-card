@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { Container, Row, Col, Card, Button, Spinner, Alert } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChartLine, faExternalLinkAlt, faHome } from '@fortawesome/free-solid-svg-icons';
+import { faExternalLinkAlt, faHome } from '@fortawesome/free-solid-svg-icons';
 import '../styles/CryptoTrackerPage.css';
 
 function CryptoTrackerPage() {
