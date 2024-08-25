@@ -78,7 +78,7 @@ function About() {
 					Crypto-to-Gift Card Converter
 				</Typography>
 				<Typography variant="subtitle1" paragraph sx={{ fontSize: { xs: '1rem', sm: '1.25rem' } }}>
-					A project idea with an objective to align with Bitrefill's mission and tech stack. Designed to demonstrate skills, interest, and understanding of Bitrefill's goals, tech stack, and core business while showing consideration for the company's visual identity and ability to create cohesive UI.
+					A project idea with an objective to align with Bitrefill's mission and tech stack. Designed to demonstrate my skills, interest, and understanding of Bitrefill's goals, tech stack, and core business while showing consideration for the company's visual identity and ability to create cohesive UI.
 				</Typography>
 
 				<SectionTitle variant="h4">Features</SectionTitle>
@@ -97,17 +97,20 @@ function About() {
 					<Chip label="Vite" />
 					<Chip label="CoinGecko API" />
 					<Chip label="JSON" />
+					<Chip label="Render" />
+					<Chip label="Bootrstap" />
+					<Chip label="MaterialUI" />
 				</ChipContainer>
 				<Typography component="ul" sx={{ fontSize: { xs: '1rem', sm: '1.25rem' } }}>
-					<li>A Single-page application created with React</li>
+					<li>A Single-page application created with React </li>
 					<li>Using a CoinGecko public API for cryptocurrency prices (free tier limits API calls to 5-15/min)</li>
 					<li>And a JSON file storing a mock list of gift cards</li>
+					<li>Deployed on Render</li>
 				</Typography>
 
 				<SectionTitle variant="h4">Design</SectionTitle>
 				<Typography component="ul" sx={{ fontSize: { xs: '1rem', sm: '1.25rem' } }}>
-					<li>Bitrefill website style and color palette</li>
-					<li>Dark/Light theme toggle</li>
+					<li>Modern UI using glassmorphism and claymorphism</li>
 					<li>Links to real gift cards</li>
 					<li>Clean responsive interface for mobile and desktop</li>
 					<li>Loading states for API calls</li>
