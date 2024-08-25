@@ -1,4 +1,5 @@
 import Header from './Header';
+import WelcomeMessage from './WelcomeMessage';
 import USDInput from './USDInput';
 import CryptoConverter from './CryptoConverter';
 import GiftCardGallery from './GiftCardGallery';
@@ -16,6 +17,7 @@ function Home({
 }) {
 	return (
 		<>
+			<WelcomeMessage />
 			<Header onCryptoChange={handleCryptoChange} onSearch={handleSearch} />
 			<main className="main-content">
 				<USDInput value={usdAmount} onChange={handleUsdChange} />
