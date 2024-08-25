@@ -52,6 +52,7 @@ function About() {
 				<Typography component="ul">
 					<li>Users can select a cryptocurrency and enter an amount</li>
 					<li>Users search available gift cards by name</li>
+					<li>Info tooltips next to crypto inputs for new users</li>
 					<li>The app converts the USD amount to selected crypto amount in real-time</li>
 					<li>Based on the USD value, it suggests gift cards that the user could purchase</li>
 					<li>User can see all gift cards and be redirected to the Bitrefill wesbsite</li>
@@ -67,7 +68,7 @@ function About() {
 				</ChipContainer>
 				<Typography component="ul">
 					<li>A Single-page application created with React</li>
-					<li>Using a CoinGecko public API for cryptocurrency prices</li>
+					<li>Using a CoinGecko public API for cryptocurrency prices(free tier limits API calls to 5-15/min)</li>
 					<li>And a JSON file storing a mock list of gift cards</li>
 				</Typography>
 
