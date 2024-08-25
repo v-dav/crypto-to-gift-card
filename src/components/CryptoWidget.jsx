@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChartLine, faTimes } from '@fortawesome/free-solid-svg-icons';
+import '../styles/CryptoWidget.css';
 
 function CryptoWidget() {
 	const [isOpen, setIsOpen] = useState(false);

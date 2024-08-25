@@ -1,0 +1,164 @@
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.9);
+	/* Glass-like background */
+	backdrop-filter: blur(10px);
+	/* Apply blur for glassmorphism effect */
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	/* Soft shadow for elevation */
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.logo {
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.logo a:hover {
+	color: #6C757D;
+}
+
+.logo svg {
+	height: 28px;
+	margin-right: 10px;
+}
+
+.logo p {
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: #2c3e50;
+}
+
+.search-bar {
+	display: flex;
+	align-items: center;
+	background-color: #DEE3E1;
+	border-radius: 8px;
+	padding: 5px 10px;
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+	transition: background-color 0.3s ease, border-color 0.3s ease;
+	/* Smooth transition */
+}
+
+/* Apply styles to the entire search bar when the input is focused */
+.search-bar:focus-within {
+	background-color: white;
+	/* Change background color of the whole area */
+	border: 2px solid black;
+	/* Add black border around the search bar */
+}
+
+/* Style the input field */
+.search-bar input {
+	border: none;
+	outline: none;
+	margin-left: 10px;
+	background: transparent;
+	/* Keep the input background transparent to inherit from parent */
+	color: #6A706E;
+}
+
+/* Style the input field when focused (if any additional styles are needed) */
+.search-bar input:focus {
+	background-color: transparent;
+	/* Keep the input background transparent */
+	outline: none;
+	/* Remove the default outline */
+}
+
+/* Style the placeholder */
+.search-bar input::placeholder {
+	color: #6A706E;
+}
+
+.crypto-dropdown select {
+	border: 1px solid #bdc3c7;
+	border-radius: 8px;
+	padding: 5px 10px;
+	background-color: rgba(255, 255, 255, 0.8);
+	color: #2c3e50;
+	margin-left: 20px;
+	transition: border-color 0.3s ease;
+	cursor: pointer;
+}
+
+.crypto-dropdown select:hover {
+	border: 2px solid black;
+}
+
+.widget-toggle {
+	color: black;
+	font-weight: 400;
+	border: 1px solid #3d3a3a;
+	border-radius: 8px;
+	padding: 7px;
+}
+
+.widget-toggle svg {
+	margin-right: 10px;
+}
+
+.widget-toggle:hover {
+	background-color: #6C757D;
+	color: white;
+	border-color: #6C757D;
+}
+
+.documentation-link {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.documentation-link a {
+	margin-left: 5px;
+	color: #007bff;
+	font-weight: bold;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+.documentation-link a:hover {
+	color: #f00000;
+}
+
+.documentation-link svg {
+	font-size: 1.5rem;
+	color: #34495e;
+	transition: color 0.3s ease;
+}
+
+.documentation-link svg:hover {
+	background-color: #6C757D;
+	color: white;
+	border-radius: 50%;
+}
+
+/* Responsive Design */
+@media (max-width: 878px) {
+	.header {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.logo {
+		align-items: center;
+	}
+
+	.search-bar,
+	.crypto-dropdown,
+	.documentation-link {
+		margin-top: 10px;
+		width: 100%;
+	}
+
+	.search-bar input,
+	.crypto-dropdown select {
+		width: 100%;
+	}
+}

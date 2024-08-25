@@ -1,18 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { faCircleQuestion } from '@fortawesome/free-regular-svg-icons';
 import CryptoWidget from './CryptoWidget';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Dropdown } from 'react-bootstrap';
+import '../styles/Header.css';
 
 function Header({ onCryptoChange, onSearch }) {
+	const [selectedCrypto, setSelectedCrypto] = useState('Select Crypto');
+
 	const handleSearch = (e) => {
 		onSearch(e.target.value);
 	};
 
+	const handleCryptoSelect = (eventKey, event) => {
+		setSelectedCrypto(event.target.textContent);
+		onCryptoChange({ target: { value: eventKey } });
+	};
+
 	return (
-		<header>
+		<header className="header">
 			<div className="logo">
 				<a href="https://www.bitrefill.com" target="_blank" rel="noopener noreferrer">
 					<svg xmlns="http://www.w3.org/2000/svg" width="111" height="28" fill="none">
@@ -30,17 +39,24 @@ function Header({ onCryptoChange, onSearch }) {
 				/>
 			</div>
 			<div className="crypto-dropdown">
-				<select onChange={onCryptoChange}>
-					<option value="bitcoin">BTC</option>
-					<option value="ethereum">ETH</option>
-					<option value="binancecoin">BNB</option>
-					<option value="solana">SOL</option>
-				</select>
+				<Dropdown onSelect={handleCryptoSelect}>
+					<Dropdown.Toggle variant="outline-secondary" id="dropdown-basic">
+						{selectedCrypto}
+					</Dropdown.Toggle>
+
+					<Dropdown.Menu>
+						<Dropdown.Item eventKey="bitcoin">BTC</Dropdown.Item>
+						<Dropdown.Item eventKey="ethereum">ETH</Dropdown.Item>
+						<Dropdown.Item eventKey="binancecoin">BNB</Dropdown.Item>
+						<Dropdown.Item eventKey="solana">SOL</Dropdown.Item>
+					</Dropdown.Menu>
+				</Dropdown>
 			</div>
 			<CryptoWidget />
 			<div className="documentation-link">
-				<FontAwesomeIcon icon={faCircleQuestion} />
-				<Link to="/about">About</Link>
+				<Link to="/about">
+					<FontAwesomeIcon icon={faCircleQuestion} />
+				</Link>
 			</div>
 		</header>
 	);
