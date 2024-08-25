@@ -92,6 +92,7 @@ h1 {
 	color: #6C757D;
 	border-color: #6C757D;
 	transition: all 0.3s ease;
+	border-radius: 5px;
 }
 
 .btn-outline-light:hover {
@@ -110,6 +111,6 @@ h1 {
 	}
 
 	.btn-outline-light {
-		font-size: 0.9rem;
+		font-size: 1rem;
 	}
 }
