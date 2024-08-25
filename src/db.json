@@ -13,7 +13,8 @@
 			"currency": "USD",
 			"image": "https://cdn.bitrefill.com/primg/w720h432/amazon-sweden.webp",
 			"description": "Shop millions of products on Amazon",
-			"link": "https://www.bitrefill.com/se/en/gift-cards/amazon-sweden/"
+			"link": "https://www.bitrefill.com/se/en/gift-cards/amazon-sweden/",
+			"popular": true
 		},
 		{
 			"id": "spts001",
@@ -41,7 +42,8 @@
 			"currency": "USD",
 			"image": "https://cdn.bitrefill.com/primg/w720h432/netflix-mexico.webp",
 			"description": "Watch unlimited movies and TV shows",
-			"link": "https://www.bitrefill.com/se/en/netflix-mexico/"
+			"link": "https://www.bitrefill.com/se/en/netflix-mexico/",
+			"popular": true
 		},
 		{
 			"id": "sbux001",
@@ -114,6 +116,109 @@
 			"image": "https://cdn.bitrefill.com/primg/w720h432/walmart-china.webp",
 			"description": "Shop for groceries, electronics, and more",
 			"link": "https://www.bitrefill.com/se/en/gift-cards/walmart-china/"
+		},
+		{
+			"id": "psn001",
+			"name": "PlayStation Network",
+			"category": "Gaming",
+			"values": [
+				10,
+				20,
+				50,
+				100
+			],
+			"currency": "USD",
+			"image": "https://cdn.bitrefill.com/primg/w720h432/sony-playstation-usa.webp",
+			"description": "Buy games, DLC, and more for PlayStation consoles",
+			"link": "https://www.bitrefill.com/se/en/sony-playstation-usa/"
+		},
+		{
+			"id": "xbxl001",
+			"name": "Xbox Live",
+			"category": "Gaming",
+			"values": [
+				15,
+				25,
+				50,
+				100
+			],
+			"currency": "USD",
+			"image": "https://cdn.bitrefill.com/primg/w720h432/xbox-live-usa.webp",
+			"description": "Purchase games and content for Xbox consoles",
+			"link": "https://www.bitrefill.com/se/en/xbox-live-usa/",
+			"popular": true
+		},
+		{
+			"id": "hulu001",
+			"name": "Hulu",
+			"category": "Streaming Services",
+			"values": [
+				25,
+				50,
+				100
+			],
+			"currency": "USD",
+			"image": "https://cdn.bitrefill.com/primg/w720h432/hulu-usa.webp",
+			"description": "Stream TV shows, movies, and original content",
+			"link": "https://www.bitrefill.com/se/en/hulu-usa/"
+		},
+		{
+			"id": "airb001",
+			"name": "Airbnb",
+			"category": "Travel",
+			"values": [
+				50,
+				100,
+				200
+			],
+			"currency": "USD",
+			"image": "https://cdn.bitrefill.com/primg/w720h432/airbnb-usa.webp",
+			"description": "Book unique accommodations around the world",
+			"link": "https://www.bitrefill.com/se/en/airbnb-usa/"
+		},
+		{
+			"id": "ntnd001",
+			"name": "Nintendo eShop",
+			"category": "Gaming",
+			"values": [
+				10,
+				20,
+				50,
+				100
+			],
+			"currency": "USD",
+			"image": "https://cdn.bitrefill.com/primg/w720h432/nintendo-eshop-usa.webp",
+			"description": "Buy games and content for Nintendo consoles",
+			"link": "https://www.bitrefill.com/se/en/nintendo-eshop-usa/"
+		},
+		{
+			"id": "dsny001",
+			"name": "Disney+",
+			"category": "Streaming Services",
+			"values": [
+				25,
+				50,
+				100
+			],
+			"currency": "USD",
+			"image": "https://cdn.bitrefill.com/primg/w720h432/disney-usa.webp",
+			"description": "Stream Disney, Pixar, Marvel, Star Wars, and more",
+			"link": "https://www.bitrefill.com/se/en/disney-usa/",
+			"popular": true
+		},
+		{
+			"id": "expd001",
+			"name": "Expedia",
+			"category": "Travel",
+			"values": [
+				50,
+				100,
+				250
+			],
+			"currency": "USD",
+			"image": "https://cdn.bitrefill.com/primg/w720h432/global-hotel-card-se.webp",
+			"description": "Book flights, hotels, and vacation packages",
+			"link": "https://www.bitrefill.com/se/en/global-hotel-card-se/"
 		}
 	]
 }
