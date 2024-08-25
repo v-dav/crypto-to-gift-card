@@ -1,0 +1,39 @@
+.crypto-converter .glassmorphism {
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(10px);
+	border-radius: 15px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	overflow: visible; /* Add this line */
+      }
+
+.crypto-converter .amount {
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: #fff;
+}
+
+.crypto-converter .usd-amount {
+	color: #00FFAA;
+}
+
+.crypto-converter .crypto-amount {
+	color: #0055FF;
+}
+
+.crypto-converter .info-icon {
+	font-size: 1rem;
+	color: rgba(255, 255, 255, 0.7);
+	cursor: help;
+}
+
+.crypto-converter .exchange-icon {
+	font-size: 2rem;
+	color: #fff;
+}
+
+@media (max-width: 768px) {
+	.crypto-converter .amount {
+		font-size: 1.2rem;
+	}
+}

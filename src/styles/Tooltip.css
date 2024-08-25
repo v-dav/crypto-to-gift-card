@@ -1,0 +1,46 @@
+.tooltip-container {
+	position: relative;
+	display: inline-block;
+}
+
+.tooltip-text-wrapper {
+	position: fixed;
+	z-index: 1000;
+	pointer-events: none;
+}
+
+.tooltip-text {
+	position: absolute;
+	bottom: 100%;
+	left: 1000%;
+	transform: translateX(-50%);
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 10px;
+	width: 200px;
+	font-size: 0.9rem;
+	margin-bottom: 10px;
+}
+
+.tooltip-text::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+}
+
+#root>div>div>main>div.crypto-converter.my-4.container>div>div>div>div.my-3.my-md-0.col-md-2.col-12>svg,
+#root>div>div>main>div.crypto-converter.my-4.container>div>div>div>div:nth-child(1)>div>span>svg>path,
+#root > div > div > main > div.crypto-converter.my-4.container > div > div > div > div:nth-child(3) > div > span > svg > path {
+	color: black;
+}
+
+svg-inline--fa fa-circle-info info-icon ms-2 {
+	color: black;
+}

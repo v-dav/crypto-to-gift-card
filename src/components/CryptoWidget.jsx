@@ -1,7 +1,5 @@
-import { useState, useEffect } from 'react';
-import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChartLine, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faChartLine } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
 import '../styles/CryptoWidget.css';

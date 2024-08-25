@@ -1,22 +1,27 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../styles/USDInput.css'; // Custom styles for additional theming
+import React from 'react';
+import { InputGroup, FormControl } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDollarSign } from '@fortawesome/free-solid-svg-icons';
+import '../styles/USDInput.css';
 
 function USDInput({ value, onChange }) {
 	return (
 		<div className="usd-input-container">
-			<div className="input-wrapper input-group">
-				<span className="input-group-text">$</span>
-				<input
+			<h2>Enter USD Amount</h2>
+			<InputGroup className="mb-3">
+				<InputGroup.Text className="dollar-sign">
+					<FontAwesomeIcon icon={faDollarSign} />
+				</InputGroup.Text>
+				<FormControl
 					type="number"
 					id="usd-amount"
-					className="form-control"
 					value={value}
 					onChange={onChange}
-					placeholder="Enter amount (USD)"
 					min="0"
 					step="0.01"
+					aria-label="USD amount"
 				/>
-			</div>
+			</InputGroup>
 		</div>
 	);
 }
