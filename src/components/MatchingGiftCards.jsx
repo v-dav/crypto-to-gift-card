@@ -7,7 +7,7 @@ function MatchingGiftCards({ cards }) {
 
 	return (
 		<div className="matching-gift-cards">
-			<h2>Your Gift Cards</h2>
+			<h2>Gift Cards for this amount</h2>
 			<div className="card-grid">
 				{cards.map((card) => (
 					<div key={card.id} className="card" onClick={() => handleCardClick(card.link)}>
