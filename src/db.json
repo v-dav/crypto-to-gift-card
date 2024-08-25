@@ -1,0 +1,119 @@
+{
+	"giftCards": [
+		{
+			"id": "amzn001",
+			"name": "Amazon",
+			"category": "Online Shopping",
+			"values": [
+				25,
+				50,
+				100,
+				200
+			],
+			"currency": "USD",
+			"image": "https://cdn.bitrefill.com/primg/w720h432/amazon-sweden.webp",
+			"description": "Shop millions of products on Amazon",
+			"link": "https://www.bitrefill.com/se/en/gift-cards/amazon-sweden/"
+		},
+		{
+			"id": "spts001",
+			"name": "Spotify",
+			"category": "Music & Entertainment",
+			"values": [
+				10,
+				30,
+				60
+			],
+			"currency": "USD",
+			"image": "https://cdn.bitrefill.com/primg/w720h432/spotify-sweden.webp",
+			"description": "Stream your favorite music and podcasts",
+			"link": "https://www.bitrefill.com/se/en/spotify-sweden/"
+		},
+		{
+			"id": "nflx001",
+			"name": "Netflix",
+			"category": "Streaming Services",
+			"values": [
+				25,
+				50,
+				100
+			],
+			"currency": "USD",
+			"image": "https://cdn.bitrefill.com/primg/w720h432/netflix-mexico.webp",
+			"description": "Watch unlimited movies and TV shows",
+			"link": "https://www.bitrefill.com/se/en/netflix-mexico/"
+		},
+		{
+			"id": "sbux001",
+			"name": "Starbucks",
+			"category": "Food & Drink",
+			"values": [
+				10,
+				25,
+				50
+			],
+			"currency": "USD",
+			"image": "https://cdn.bitrefill.com/primg/w720h432/starbucks-gift-card-germany.webp",
+			"description": "Enjoy premium coffee and snacks",
+			"link": "https://www.bitrefill.com/se/en/starbucks-gift-card-germany/"
+		},
+		{
+			"id": "stwm001",
+			"name": "Steam",
+			"category": "Gaming",
+			"values": [
+				20,
+				50,
+				100
+			],
+			"currency": "USD",
+			"image": "https://cdn.bitrefill.com/primg/w720h432/steam-usa.webp",
+			"description": "Access a vast library of PC games",
+			"link": "https://www.bitrefill.com/se/en/steam-usa/"
+		},
+		{
+			"id": "ubts001",
+			"name": "Uber",
+			"category": "Transportation",
+			"values": [
+				25,
+				50,
+				100
+			],
+			"currency": "USD",
+			"image": "https://cdn.bitrefill.com/primg/w720h432/uber-sweden.webp",
+			"description": "Get rides or order food delivery",
+			"link": "https://www.bitrefill.com/se/en/uber-sweden/"
+		},
+		{
+			"id": "aapl001",
+			"name": "Apple App Store",
+			"category": "Mobile Apps",
+			"values": [
+				15,
+				25,
+				50,
+				100
+			],
+			"currency": "USD",
+			"image": "https://cdn.bitrefill.com/primg/w720h432/apple-sweden.webp",
+			"description": "Buy apps, games, and more for iOS devices",
+			"link": "https://www.bitrefill.com/se/en/apple-sweden/"
+		},
+		{
+			"id": "wlmt001",
+			"name": "Walmart",
+			"category": "Retail",
+			"values": [
+				25,
+				50,
+				100,
+				200
+			],
+			"currency": "USD",
+			"image": "https://cdn.bitrefill.com/primg/w720h432/walmart-china.webp",
+			"description": "Shop for groceries, electronics, and more",
+			"link": "https://www.bitrefill.com/se/en/gift-cards/walmart-china/"
+		}
+	]
+}
