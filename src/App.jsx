@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import About from './components/About';
 import Home from './components/Home';
 import Footer from './components/Footer';
+import CryptoTrackerPage from './components/CryptoTrackerPage';
 import giftCardsData from './db.json';
 import "./App.css";
 
@@ -76,6 +77,7 @@ function App() {
 							/>
 						} />
 						<Route path="/about" element={<About />} />
+						<Route path="/crypto-tracker" element={<CryptoTrackerPage />} />
 					</Routes>
 				</div>
 				<Footer /> 

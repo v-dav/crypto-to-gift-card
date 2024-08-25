@@ -1,0 +1,48 @@
+.usd-input-container {
+	max-width: 400px;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+.input-wrapper {
+	position: relative;
+}
+
+.input-group-text {
+	border: none;
+	color: #34495e;
+	font-weight: bold;
+}
+
+.form-control {
+	border: 1px solid #bdc3c7;
+	border-radius: 8px;
+	padding: 10px 15px;
+	font-size: 1.1em;
+	color: #34495e;
+	transition: border-color 0.3s ease, box-shadow 0.3s ease;
+	backdrop-filter: blur(10px);
+}
+
+.form-control:focus {
+	border-color: #007bff;
+	box-shadow: 0 0 10px rgba(0, 123, 255, 0.2);
+}
+
+.form-control::placeholder {
+	color: #95a5a6;
+	opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+	.usd-input-container {
+		max-width: 100%;
+		padding: 0 20px;
+	}
+
+	.form-control {
+		font-size: 1em;
+		padding: 8px 12px;
+	}
+}

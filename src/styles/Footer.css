@@ -1,0 +1,7 @@
+#root > div > footer > div > p {
+	color: white;
+}
+
+.social-links a svg:hover {
+	color: red;
+}

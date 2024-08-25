@@ -3,6 +3,7 @@ import Tooltip from './Tooltip';
 import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInfoCircle } from '@fortawesome/free-solid-svg-icons';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function CryptoConverter({ usdAmount, selectedCrypto }) {
 	const [cryptoAmount, setCryptoAmount] = useState(0);
@@ -42,21 +43,27 @@ function CryptoConverter({ usdAmount, selectedCrypto }) {
 	if (!usdAmount || isNaN(usdAmount) || usdAmount <= 0) return null;
 
 	return (
-		<div className="crypto-converter">
-			<div className="conversion-result">
-				<Tooltip text="This is the USD amount you entered for conversion">
-					<span className="usd-amount">
-						${parseFloat(usdAmount).toFixed(2)} USD
-						<FontAwesomeIcon icon={faInfoCircle} className="info-icon" />
-					</span>
-				</Tooltip>
-				<span className="equals">≈</span>
-				<Tooltip text={`This is the equivalent amount in ${selectedCrypto.toUpperCase()} based on current exchange rates`}>
-					<span className="crypto-amount">
-						{cryptoAmount.toFixed(8)} {selectedCrypto.toUpperCase()}
-						<FontAwesomeIcon icon={faInfoCircle} className="info-icon" />
-					</span>
-				</Tooltip>
+		<div className="crypto-converter container my-4 p-3 bg-light rounded shadow-sm">
+			<div className="conversion-result row text-center align-items-center">
+				<div className="col">
+					<Tooltip text="This is the USD amount you entered for conversion">
+						<span className="usd-amount h4">
+							${parseFloat(usdAmount).toFixed(2)} USD
+							<FontAwesomeIcon icon={faInfoCircle} className="info-icon ms-2 text-muted" />
+						</span>
+					</Tooltip>
+				</div>
+				<div className="col-auto">
+					<span className="equals display-4">≈</span>
+				</div>
+				<div className="col">
+					<Tooltip text={`This is the equivalent amount in ${selectedCrypto.toUpperCase()} based on current exchange rates`}>
+						<span className="crypto-amount h4">
+							{cryptoAmount.toFixed(8)} {selectedCrypto.toUpperCase()}
+							<FontAwesomeIcon icon={faInfoCircle} className="info-icon ms-2 text-muted" />
+						</span>
+					</Tooltip>
+				</div>
 			</div>
 		</div>
 	);

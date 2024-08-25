@@ -1,3 +1,8 @@
+import { Container, Row, Col, Card } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGift } from '@fortawesome/free-solid-svg-icons';
+import '../styles/MatchingGiftCards.css';
+
 function MatchingGiftCards({ cards }) {
 	if (cards.length === 0) return null;
 
@@ -6,23 +11,28 @@ function MatchingGiftCards({ cards }) {
 	};
 
 	return (
-		<div className="matching-gift-cards">
-			<h2>Gift Cards for this amount</h2>
-			<div className="card-grid">
+		<Container className="matching-gift-cards py-5">
+			<h2 className="text-center mb-4">
+				<FontAwesomeIcon icon={faGift} className="me-2" />
+				Gift Cards for this Amount
+			</h2>
+			<Row xs={1} sm={2} md={3} lg={4} className="g-4">
 				{cards.map((card) => (
-					<div key={card.id} className="card" onClick={() => handleCardClick(card.link)}>
-						<img src={card.image} alt={card.name} className="card-image" />
-						<div className="card-content">
-							<h3>{card.name}</h3>
-							<p className="category">{card.category}</p>
-							<p className="matching-value">
-								Closest value: {card.currency} {card.closestValue}
-							</p>
-						</div>
-					</div>
+					<Col key={card.id}>
+						<Card className="h-100 gift-card" onClick={() => handleCardClick(card.link)}>
+							<Card.Img variant="top" src={card.image} alt={card.name} />
+							<Card.Body>
+								<Card.Title>{card.name}</Card.Title>
+								<Card.Text className="category">{card.category}</Card.Text>
+								<Card.Text className="matching-value">
+									Closest value: ${card.closestValue}
+								</Card.Text>
+							</Card.Body>
+						</Card>
+					</Col>
 				))}
-			</div>
-		</div>
+			</Row>
+		</Container>
 	);
 }
 

@@ -1,0 +1,97 @@
+.gift-card-gallery {
+	text-align: center;
+}
+
+.gift-card-gallery .btn {
+	background-color: #000000;
+	color: #fff;
+	border-radius: 8px;
+	padding: 10px 20px;
+	font-size: 1.2rem;
+	transition: background-color 0.3s ease;
+	border-color: black;
+
+}
+
+.gift-card-gallery .btn:hover {
+	background-color: #6C757D;
+	border-color: black;
+}
+
+.card {
+	background-color: rgba(255, 255, 255, 0.9);
+	border: none;
+	border-radius: 16px;
+	overflow: hidden;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	cursor: pointer;
+}
+
+.card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+	border-top-left-radius: 16px;
+	border-top-right-radius: 16px;
+	height: 200px;
+	object-fit: cover;
+	transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+	transform: scale(1.05);
+}
+
+.card-body {
+	padding: 20px;
+}
+
+.card-title {
+	font-size: 1.25rem;
+	color: #2c3e50;
+	margin-bottom: 0.5rem;
+}
+
+.card-text {
+	color: #7f8c8d;
+}
+
+.card-text.category {
+	font-style: italic;
+	margin-bottom: 1rem;
+}
+
+.card-text.description {
+	font-size: 0.9rem;
+	margin-bottom: 1.5rem;
+}
+
+.card-text.values {
+	font-size: 0.85rem;
+}
+
+.card-text.values span {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+@media (max-width: 768px) {
+	.card-body {
+		padding: 15px;
+	}
+
+	.card-title {
+		font-size: 1.1rem;
+	}
+
+	.card-text.description {
+		font-size: 0.85rem;
+	}
+
+	.card-text.values {
+		font-size: 0.8rem;
+	}
+}
