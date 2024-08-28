@@ -122,7 +122,7 @@ function About() {
 						aria-label="github"
 						color="primary"
 						component="a"
-						href="https://github.com/v-dav"
+						href="https://github.com/v-dav/crypto-to-gift-card"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
