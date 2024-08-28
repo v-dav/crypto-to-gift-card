@@ -8,7 +8,7 @@ function Footer() {
 	return (
 		<footer className="footer bg-dark text-light py-4">
 			<div className="container text-center">
-				<p className="mb-3">Created with ❤️ by Vladimir Davidov</p>
+				<p className="mb-3">Created by Vladimir Davidov</p>
 				<div className="social-links d-flex justify-content-center gap-4">
 					<a href="https://github.com/v-dav" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="text-light">
 						<FontAwesomeIcon icon={faGithub} size="2x" />

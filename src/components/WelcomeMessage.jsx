@@ -26,7 +26,7 @@ function WelcomeMessage() {
 				<button className="close-button" onClick={closeWelcomeMessage}>
 					<FontAwesomeIcon icon={faTimes} />
 				</button>
-				<h3>Welcome to Bitrefill's Crypto-to-Gift Card Converter!</h3>
+				<h3>Welcome to Crypto-to-Gift Card Converter!</h3>
 				<p>
 					Convert your USD to cryptocurrency and find matching gift cards.
 					Enter an amount in USD to see its value in your selected cryptocurrency.

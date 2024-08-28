@@ -77,9 +77,6 @@ function About() {
 				<Typography variant="h3" gutterBottom sx={{ fontSize: { xs: '2rem', sm: '2.5rem' } }}>
 					Crypto-to-Gift Card Converter
 				</Typography>
-				<Typography variant="subtitle1" paragraph sx={{ fontSize: { xs: '1rem', sm: '1.25rem' } }}>
-					A project idea with an objective to align with Bitrefill's mission and tech stack. Designed to demonstrate my skills, interest, and understanding of Bitrefill's goals, tech stack, and core business while showing consideration for the company's visual identity and ability to create cohesive UI.
-				</Typography>
 
 				<SectionTitle variant="h4">Features</SectionTitle>
 				<Typography component="ul" sx={{ fontSize: { xs: '1rem', sm: '1.25rem' } }}>
@@ -117,20 +114,6 @@ function About() {
 					<li>Aims to be clean, user-friendly, and aligned with modern web design principles</li>
 				</Typography>
 
-				<SectionTitle variant="h4">About Bitrefill</SectionTitle>
-				<Typography paragraph sx={{ fontSize: { xs: '1rem', sm: '1.25rem' } }}>
-					Bitrefill is a prominent player in the crypto-e-commerce space, facilitating the purchase of goods and services using cryptocurrency.
-				</Typography>
-
-				<SectionTitle variant="h6">Mission</SectionTitle>
-				<Typography paragraph sx={{ fontSize: { xs: '1rem', sm: '1.25rem' } }}>
-					To promote a circular crypto-economy, allowing users to bypass traditional banking systems and live entirely on crypto. The company is committed to making cryptocurrency a viable alternative to fiat currency.
-				</Typography>
-
-				<SectionTitle variant="h6">Platform</SectionTitle>
-				<Typography paragraph sx={{ fontSize: { xs: '1rem', sm: '1.25rem' } }}>
-					Bitrefill's platform supports various digital services like mobile top-ups, gift cards, and more, with a focus on making crypto practical for everyday use.
-				</Typography>
 
 				<SectionTitle variant="h4">Author</SectionTitle>
 				<Typography paragraph sx={{ fontSize: { xs: '1rem', sm: '1.25rem' } }}>Vladimir Davidov</Typography>
